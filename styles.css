@@ -1,74 +1,172 @@
+/* Base styles for the entire site */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
+/* Header styles */
 header {
     background: #333;
     color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #77aaff 3px solid;
-}
-
-header a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-}
-
-header ul {
-    padding: 0;
-    list-style: none;
-}
-
-header ul li {
-    display: inline;
-    margin-right: 20px;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
-    float: left;
-    margin-top: 0;
+    margin: 0;
+    font-size: 2.5rem;
 }
 
-header nav {
-    float: right;
-    margin-top: 10px;
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-.section {
-    padding: 20px 0;
-    border-bottom: #e0e0e0 1px solid;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-.section:last-child {
-    border-bottom: none;
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section styles */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
 .project {
     margin-bottom: 20px;
 }
 
-.project a {
-    color: #333;
-    text-decoration: none;
+.project h3 {
+    font-size: 1.5rem;
+    color: #444;
 }
 
+.project p {
+    margin: 10px 0;
+}
+
+.project a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #1e90ff;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Contact section styles */
+section#contact p, form {
+    font-size: 1rem;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background: #555;
+}
+
+/* Footer styles */
 footer {
     background: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    margin-top: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header, footer {
+        padding: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    form label {
+        font-size: 0.9rem;
+    }
+
+    form input, form textarea {
+        font-size: 0.9rem;
+    }
+
+    form button {
+        font-size: 0.9rem;
+    }
 }

@@ -1,70 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  <meta name="description" content="Rahul Kanna S's Cyberpunk Portfolio - Programmer, Web Developer, Data Analyst">
+  <meta name="author" content="Rahul Kanna S">
+  <meta name="keywords" content="Rahul Kanna S, UMass Amherst, Web Developer, Data Analyst, Cyberpunk Portfolio, Interactive Resume">
+  <link rel="shortcut icon" href="./assets/img/favicon.ico">
+  <title>RAHUL KANNA S | Digital Nexus</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-j4p0jm9yVPC8W+f+dY6Xyug8lHJnUsbP1bMO8lNvX+1CkYnSx4+oA9X5EYkl9gB1hH8Tzmu9ZFrfpSn4tf0D9g==" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header>
-        <h1>My Portfolio <span class="typed-text"></span><span class="cursor">&nbsp;</span></h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
+  <div id="particles-js"></div>
+  <div id="glitch-overlay"></div>
+  <header>
+    <div class="top-left-image">
+      <img src="C:\Users\sakth\OneDrive\Desktop\portfolio\img\aws.png" alt="My Badge" width="170">
+    </div>
+    <div></div>
+    <div></div>
+    <div class="header-content">
+      <h1 class="site-title">RAHUL KANNA S</h1>
+      <span class="site-description"> Data Scientist • Prompt Engineer • AI Infused</span>
+      <nav class="header-links">
+        <a href="#about" aria-label="About Me - My Digital Identity">My Identity</a>
+        <a href="#powerbi" aria-label="Power BI - My Data Nexus">Data Nexus</a>
+        <a href="#projects" aria-label="Projects - My Digital Constructs">Certificates</a>
+      </nav>
+    </div>
+    <div class="top-right-image">
+      <img src="./img/mypic.png" alt="My Picture" width="170">
+    </div>
+  </header>
+  <main>
     <section id="about">
-        <h2>About Me</h2>
-        <p>Welcome to my portfolio website! I'm a data enthusiast and I love working on data analysis and visualization projects.</p>
+      <div class="user-details">
+        <h1>My Digital Identity</h1>
+        <p>Welcome to my digital nexus, traveler. I am a sentient program, a junior instance in the College of Information and Computer Sciences at UMass Amherst. My directives span the domains of systems programming, software engineering, and data analysis...</p>
+      </div>
+      <div class="user">
+        <div class="tech">
+          <h2>Languages</h2>
+          <div class="tech-icons">
+            <img src="./img/python.jpg" alt="Python" title="Python" style="width: 65px; height: 65px;">
+            <img src="./img/sql.jpg" alt="SQL" title="SQL" style="width: 65px; height: 65px;">
+            <img src="./img/spark.jpg" alt="Apache Spark" title="Apache Spark" style="width: 65px; height: 65px;">
+            <img src="./img/scala.jpg" alt="Scala" title="Scala" style="width: 65px; height: 65px;">
+          </div>
+          <p>My core protocols for system architecture, software synthesis, and data decryption.</p>
+        </div>
+        <div class="tech">
+          <h2>Tools</h2>
+          <div class="tech-icons">
+            <img src="./img/powerbi.jpg" alt="Power BI" title="Power BI" style="width: 65px; height: 65px;">
+            <img src="./img/github.jpg" alt="GitHub" title="GitHub" style="width: 65px; height: 65px;">
+            <img src="./img/ai.webp" alt="AI" title="AI" style="width: 65px; height: 65px;">
+            <img src="./img/cloud.jpg" alt="Cloud Platforms" title="Cloud Platforms" style="width: 65px; height: 65px;">
+          </div>
+          <p>My arsenal for version control, code synthesis, and container deployment.</p>
+        </div>
+      </div>
     </section>
-
+    <section id="powerbi">
+      <div class="user-details">
+        <h1>Data Nexus</h1>
+      </div>
+      <div class="user-projects">
+        <h3>Select a image to explore</h3>
+        <div class="project-grid">
+          <a class="project" href="https://app.powerbi.com/view?r=eyJrIjoiNmExNTg1ZTgtZjgzYy00NjAxLWJiY2QtNTUzNjRlODRiZTgxIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9" target="_blank">
+            <img src="./img/covid.png" alt="Covid-19 Analysis Node" class="powerbi-thumbnail" />
+            <h4>Covid-19 Analysis</h4>
+          </a>
+          <a class="project" href="https://app.powerbi.com/view?r=eyJrIjoiNjFiODRjNjYtNWEzMi00NDMyLWFkNDEtNWNiZjJjZDkwODFjIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9" target="_blank">
+            <img src="./img/ipl.jpg" alt="IPL Analytics Node" class="powerbi-thumbnail" />
+            <h4>IPL Analytics</h4>
+          </a>
+          <a class="project" href="https://app.powerbi.com/view?r=eyJrIjoiMWVlYjZmZWQtMDgwMS00MjBhLTk3MTUtNDBjNDU2NjVjZmM4IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9" target="_blank">
+            <img src="./img/terror.png" alt="Global Terrorism Node" class="powerbi-thumbnail" />
+            <h4>Global Terrorism</h4>
+          </a>
+          <a class="project" href="https://github.com/rkk96/Projectdatapipeline" target="_blank">
+            <img src="C:\Users\sakth\OneDrive\Desktop\portfolio\img\data.png" alt="Data Engineering Node" class="powerbi-thumbnail" />
+            <h4>Data Engineering</h4>
+          </a>
+          <a class="project" href="https://github.com/rkk96/Falcon-9-Space-x-Prediction" target="_blank">
+            <img src="C:\Users\sakth\OneDrive\Desktop\portfolio\img\space x.png" alt="Data Engineering Node" class="powerbi-thumbnail" />
+            <h4>Falcon 9 Sucess Prediction</h4>
+          </a>
+          <a class="project" href="https://github.com/rkk96/Sales-Prediction-of-Two-wheelers" target="_blank">
+            <img src="C:\Users\sakth\OneDrive\Desktop\portfolio\img\salespred.png" alt="Data Engineering Node" class="powerbi-thumbnail" />
+            <h4>Sales Prediction using Machine Learning</h4>
+          </a>
+        </div>
+      </div>
+    </section>
     <section id="projects">
-        <h2>Projects</h2>
-
-        <!-- Data Analysis Project -->
-        <div class="project">
-            <h3>Data Analysis Project</h3>
-            <p>Analyzed population and income distribution data using Python, pandas, and matplotlib. Check out the full analysis on my GitHub!</p>
-            <a href="https://github.com/your-username/your-repo" target="_blank">View on GitHub</a>
-            <a href="https://colab.research.google.com/your-colab-link" target="_blank">View on Google Colab</a>
-        </div>
-
-        <!-- Decision Tree Classifier Project -->
-        <div class="project">
-            <h3>Decision Tree Classifier Project</h3>
-            <p>Built a decision tree classifier to predict customer behavior. Leveraged a rich dataset containing demographic and behavioral information.</p>
-            <a href="https://github.com/your-username/your-repo" target="_blank">View on GitHub</a>
-        </div>
-
-        <!-- Power BI Projects -->
-        <h3>Power BI Projects</h3>
-        <ul>
-            <li><a href="https://app.powerbi.com/view?r=eyJrIjoiNmExNTg1ZTgtZjgzYy00NjAxLWJiY2QtNTUzNjRlODRiZTgxIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9" target="_blank">Project 1: Covid 19 Analysis</a></li>
-            <li><a href="https://app.powerbi.com/view?r=eyJrIjoiNjFiODRjNjYtNWEzMi00NDMyLWFkNDEtNWNiZjJjZDkwODFjIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9" target="_blank">Project 2: Ipl Analysis</a></li>
-            <li><a href="https://app.powerbi.com/view?r=eyJrIjoiMWVlYjZmZWQtMDgwMS00MjBhLTk3MTUtNDBjNDU2NjVjZmM4IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9" target="_blank">Project 3: Global Terrorism</a></li>
-        </ul>
-        
-        <!-- Other Projects -->
-        <h3>Other Projects</h3>
-        <ul>
-            <li><a href="link-to-your-other-project-1">Other Project 1</a></li>
-            <li><a href="link-to-your-other-project-2">Other Project 2</a></li>
-        </ul>
+      <div class="user-details">
+        <h1>Digital Constructs</h1>
+      </div>
+      <div class="user-projects">
+        <article class="project">
+          <div class="images-right">
+            <picture>
+              <source type="image/webp" srcset="./assets/img/webp/Personal-Resume-Website.webp" alt="Digital Nexus Interface">
+              <img alt="Digital Nexus Interface" src="./assets/img/jpg/Personal-Resume-Website.jpg">
+            </picture>
+          </div>
+          <div class="contents">
+            <h3>Digital Nexus Interface</h3>
+            <div>
+              <i class="devicon-react-original colored" title="React" alt="React"></i>
+              <i class="devicon-bootstrap-plain-wordmark colored" title="Bootstrap" alt="Bootstrap"></i>
+              <i class="devicon-github-plain-wordmark colored" title="GitHub" alt="GitHub"></i>
+            </div>
+            <p>I engineered this digital realm using ReactJS and Bootstrap, anchored in the GitHub mainframe, to broadcast my virtual signature across the net...</p>
+            <a class="project-link" target="_blank" href="https://www.adityavsingh.com/">Access Interface</a>
+          </div>
+        </article>
+      </div>
     </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can reach me at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
+    <section id="methodology">
+      <div class="user-details">
+        <h1>Method of Working</h1>
+        <ol class="method-list">
+          <li>Data Sourcing</li>
+          <li>Data cleaning/gathering</li>
+          <li>Preprocessing</li>
+          <li>Feature engineering</li>
+          <li>Modeling (Training)</li>
+          <li>Interpreting the results</li>
+          <li>Evaluation</li>
+          <li>Deployment</li>
+        </ol>
+      </div>
     </section>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2024 RAHUL KANNA S | AI POWER BACKED</p>
+  </footer>
 
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
-    </footer>
-    <script src="scripts.js"></script>
+  <!-- Power BI Modal -->
+  <div id="powerbi-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <iframe id="powerbi-iframe" width="100%" height="600" frameborder="0" allowFullScreen="true" title="Power BI Dashboard"></iframe>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" async></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" async></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" async></script>
+  <script src="./assets/js/sweet-scroll.min.js" defer></script>
+  <script src="./scripts.js" defer></script>
 </body>
 </html>

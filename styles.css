@@ -26,6 +26,7 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .header-content {
@@ -65,7 +66,7 @@ header {
 .top-right-image {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 10px; 
   cursor: pointer;
 }
 

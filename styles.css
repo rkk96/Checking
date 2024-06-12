@@ -496,119 +496,6 @@ footer {
   margin-top: 0.5rem;
 }
 
-/* Responsive Design */
-@media (max-width: 1200px) {
-  main {
-    padding: 1.5rem;
-  }
-
-  h1 {
-    font-size: 2.2rem;
-  }
-
-  h2 {
-    font-size: 1.8rem;
-  }
-
-  h3 {
-    font-size: 1.3rem;
-  }
-}
-
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .header-links {
-    flex-direction: column;
-  }
-
-  nav {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .tech-icons {
-    flex-direction: column;
-  }
-
-  .site-title {
-    font-size: 2rem;
-  }
-
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.6rem;
-  }
-
-  h3 {
-    font-size: 1.2rem;
-  }
-
-  input, textarea {
-    font-size: 0.9rem;
-  }
-
-  button {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  header {
-    padding: 0.5rem;
-  }
-
-  .logo {
-    font-size: 1.2rem;
-  }
-
-  nav a {
-    padding: 0.3rem 0.7rem;
-  }
-
-  main {
-    padding: 1rem;
-  }
-
-  h1 {
-    font-size: 1.8rem;
-  }
-
-  h2 {
-    font-size: 1.4rem;
-  }
-
-  h3 {
-    font-size: 1rem;
-  }
-
-  .site-title {
-    font-size: 1.5rem;
-  }
-
-  .tech-icons img {
-    width: 100%;
-  }
-
-  input, textarea {
-    padding: 0.4rem;
-  }
-
-  button {
-    padding: 0.4rem 0.8rem;
-  }
-}
-
 /* Internships section */
 #internships {
   margin-bottom: 4rem;
@@ -720,3 +607,118 @@ footer {
   transform: scale(1.1);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+/* Responsive Design */
+@media (max-width: 1920px) {
+  main {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 1080px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-links {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .tech-icons {
+    flex-direction: column;
+  }
+
+  .site-title {
+    font-size: 2rem;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  input, textarea {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 0.5rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  nav a {
+    padding: 0.3rem 0.7rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .site-title {
+    font-size: 1.5rem;
+  }
+
+  .tech-icons img {
+    width: 100%;
+  }
+
+  input, textarea {
+    padding: 0.4rem;
+  }
+
+  button {
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+

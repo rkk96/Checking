@@ -64,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
       modal.style.display = "none";
     }
   }
+  
 
   // Add click event listener to Power BI project images
   document.querySelectorAll('.powerbi-thumbnail').forEach(image => {

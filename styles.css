@@ -480,23 +480,21 @@ footer {
   margin: 2rem auto;
   text-align: center;
   font-size: 1.2rem;
-  color: var(--text-color);
+  color: var (--text-color);
   max-width: 500px;
- }
- 
- .method-list li {
+}
+.method-list li {
   margin: 1rem 0;
   position: relative;
   padding-left: 2rem;
- }
- 
- .method-list li::after {
+}
+.method-list li:not(:last-child)::after {
   content: '▼';
   display: block;
   font-size: 1.5rem;
   color: var(--highlight-color);
   margin-top: 0.5rem;
- }
+}
 
 /* Responsive Design */
 @media (max-width: 1200px) {
@@ -609,4 +607,116 @@ footer {
   button {
     padding: 0.4rem 0.8rem;
   }
+}
+
+/* Internships section */
+#internships {
+  margin-bottom: 4rem;
+}
+
+#internships .internship-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+#internships .internship {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+#internships .internship:hover {
+  transform: translateY(-5px);
+}
+
+#internships .internship img,
+#internships .internship-thumbnail {
+  width: 75%;
+  height: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#internships .internship img:hover,
+#internships .internship-thumbnail:hover {
+  transform: scale(1.05);
+}
+
+/* Interactive section for social media links */
+.contents {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.contents p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.contents a {
+  display: inline-block;
+  margin: 0 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contents img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.contents a:hover img {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+
+
+
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.footer p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer a {
+  display: inline-block;
+  margin: 0 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.footer a:hover img {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.top-left-image {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.top-left-image img {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.top-left-image img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

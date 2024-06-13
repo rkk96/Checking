@@ -54,6 +54,14 @@ header {
   cursor: pointer;
 }
 
+#awsImg{
+  width: 170px;
+}
+
+#rahulImg{
+  width: 170px;
+}
+
 .top-left-image img {
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -84,11 +92,11 @@ header {
   font-weight: 600;
 }
 
-nav {
+/* nav {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-}
+} */
 
 nav a {
   color: #fff;
@@ -113,8 +121,8 @@ section {
 }
 
 h1, h2, h3 {
-  color: #007bff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  color: #007bff !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2) !important;
 }
 
 h1 {
@@ -418,6 +426,10 @@ footer {
   margin-bottom: 1rem;
 }
 
+.site-description-Mobile{
+  display: none;
+}
+
 .tech-item {
   display: flex;
   flex-direction: column;
@@ -470,14 +482,14 @@ footer {
     align-items: center;
   }
 
-  .header-links {
+  /* .header-links {
     flex-direction: column;
-  }
-
+  } */
+/* 
   nav {
     flex-direction: column;
     gap: 0.5rem;
-  }
+  } */
 
   .tech-icons {
     flex-direction: column;
@@ -517,56 +529,74 @@ footer {
 }
 
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
-  }
 
-  .header-content {
-    order: 2;
-    text-align: left;
-    margin-top: 1rem;
-  }
-
-  .top-right-image {
-    position: static;
-    margin-bottom: 1rem;
-  }
-
-  .top-left-image {
-    order: 1;
-  }
-
-  .top-right-image {
-    order: 3;
-    margin-top: 1rem;
-    text-align: center;
-    width: 100%;
-  }
-
-  .top-right-image img {
+  #awsImg{
     width: 120px;
   }
 
-  .site-title {
-    font-size: 1.8rem;
+  #rahulImg{
+    width: 120px;
   }
 
-  .header-links {
-    margin-top: 0.5rem;
+  .site-title{
+    font-size: 1.5rem;
+
   }
 
-  .header-links a {
-    margin: 0.5rem;
+  .site-description{
+    font-size: 0.75rem;
   }
 
-  .tech-category {
-    flex: 1 1 100%;
+  .header-links{
+    font-size: 0.75rem;
   }
+
+  nav {
+    gap: 0.25rem;
+  }
+
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
+  #awsImg{
+    width: 90px;
+  }
+
+  #rahulImg{
+    width: 90px;
+  }
+
+  .site-title{
+    font-size: 1rem;
+
+  }
+
+  .site-description{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+}
+
+@media (max-width: 450px){
+
+
+
+  .site-description-Mobile{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .site-description{
+    display: none;
+  }
+  
+}
+
+
+
+/* @media (max-width: 586px) {
   header {
     padding: 0.5rem;
   }
@@ -577,6 +607,9 @@ footer {
 
   nav a {
     padding: 0.3rem 0.7rem;
+  }
+  #awsImg{
+    width: 75px;
   }
 
   main {
@@ -617,6 +650,8 @@ footer {
   }
 
   .top-left-image {
+    width: 20px !important;
+    height: 30px !important;
     order: 1;
   }
 
@@ -628,4 +663,4 @@ footer {
   .tech-category {
     flex: 1 1 100%;
   }
-}
+} */
